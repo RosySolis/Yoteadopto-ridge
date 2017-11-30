@@ -8,6 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1, minimum-scale=1">
     <title> ¡Bienvenidos a yo te adopto! </title>
+    <link rel="stylesheet" href="./style.css">
     <style>
         /* http://meyerweb.com/eric/tools/css/reset/ 
 
@@ -105,17 +106,36 @@ table {
 
 }
 
+    * {
+        box-sizing: border-box;
+    }
 
+    nav {
+        display: none;
+    }
+    header {
+        position: fixed;
+        width: 100%;
+        padding: 20px;
 
+    }
+    header i:first-child {
+        font-size: 22px;
+    }
+    header i:last-child {
+        font-size: 26px;
+        float: right;
 
-
-Enviar mensaje a #ridge
+    }
     </style>
     </head>
     <!--Lo que el usuario ve -->
     <body>
      <!--Menu de navegacion -->
-     <header style="display: none;">
+     <header>
+
+              <i class="yta yta-menu_icon"></i>
+
          <!--Listado de opciones del menu en orden-->
          <nav>
              <!--Titulo Principal-->
@@ -131,10 +151,12 @@ Enviar mensaje a #ridge
                  <li><a href="#">Testimonios </a></li>
              </ul>
          </nav>
+              <i class="yta yta-yta_icon-white"></i>
+
      </header>
      <!--Main todo lo importante del la programacion -->
      <main>
-         <section style="background-image: url(./img/bg-home_320.jpg); height: 600px;background-size: cover; background-position: center;">
+         <section style="background-image: url(./img/bg-home_320.jpg); height: 600px;background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; height: 100vh; ">
              <!--Titulo principal de la pagina Home -->
              <svg item-width="200" height="200"aria-leabelledby ="home-title-desc">
                  <title id="home-title"> Yo Te Adopto</title>
